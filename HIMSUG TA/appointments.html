@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Submit a school clinic appointment request through HIMSOG TA! by KAABAG.">
+<title>Appointments | KAABAG - HIMSOG TA!</title>
+<link rel="stylesheet" href="css/style.css"><script src="js/home.js" defer></script><script src="js/appointments.js" defer></script>
+</head><body>
+<header class="site-header">
+    <a class="brand" href="index.html" aria-label="KAABAG HIMSOG TA home">
+      <img class="brand-logo" src="images/kaabag-logo.jpg" alt="KAABAG company logo">
+      <span><strong>KAABAG</strong><small>HIMSOG TA! • USTP</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Our Services</a>
+      <a href="clinic-info.html">Clinic Information</a>
+      <a class="" href="wellness.html">Health &amp; Wellness</a>
+      <a class="active nav-appointment" href="appointments.php">Appointments</a>
+    </nav>
+  </header>
+<main>
+<section class="appointment-hero">
+ <p class="eyebrow"><span></span> PLAN YOUR CLINIC VISIT</p>
+ <h1>Request an <em>appointment.</em></h1>
+ <p>Share your preferred clinic service, date, and time. Your request will remain pending until it is reviewed and confirmed by clinic personnel.</p>
+</section>
+<section class="appointment-layout">
+ <div class="appointment-form-card">
+  <div class="section-heading"><div><p class="eyebrow blue">STUDENT APPOINTMENT REQUEST</p><h2>Request a schedule</h2></div></div>
+  <div class="form-notice"><strong>Before you begin:</strong> Walk-ins and appointments are both allowed based on the information provided for this project. This form is a front-end demonstration and does not send requests to the actual USTP School Clinic.</div>
+  <form id="appointmentForm" class="appointment-form">
+   <div class="form-row"><label>Full name<input name="fullName" type="text" placeholder="Enter your full name" required></label><label>Student ID<input name="studentId" type="text" placeholder="Enter your student ID" required></label></div>
+   <div class="form-row"><label>USTP email address<input name="email" type="email" placeholder="name@ustp.edu.ph" required></label><label>College / Department<input name="college" type="text" placeholder="Enter your college" required></label></div>
+   <label>Clinic service<select name="service" required><option value="">Select a service</option><option>Prescription Refill</option><option>Physical Examination</option><option>Dental Services</option><option>Psychological Services</option><option>Guidance Counseling</option><option>General Clinic Consultation</option></select></label>
+   <div class="form-row"><label>Preferred date<input name="date" id="appointmentDate" type="date" required></label><label>Preferred time<select name="time" required><option value="">Select a time</option><option>8:00 AM</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option></select></label></div>
+   <label>Reason for visit <span class="optional">(brief description)</span><textarea name="reason" rows="4" placeholder="Briefly describe your concern. Avoid including highly sensitive personal details." required></textarea></label>
+   <label class="consent-line"><input type="checkbox" name="consent" required><span>I understand that this is a demonstration form and my request is not actually sent to the USTP School Clinic.</span></label>
+   <button class="primary-button" type="submit">Submit appointment request <span>→</span></button>
+   <p class="form-small">Please do not use this demonstration form for emergencies. Seek immediate assistance for urgent concerns.</p>
+  </form>
+  <div id="requestConfirmation" class="request-confirmation" hidden aria-live="polite"></div>
+ </div>
+ <aside class="appointment-side">
+  <div class="side-info-card"><div class="side-icon">◷</div><h3>Clinic hours</h3><p>8:00 AM–5:00 PM</p><small>Hours are still subject to confirmation by the clinic.</small></div>
+  <div class="side-info-card"><div class="side-icon">⌖</div><h3>Clinic location</h3><p>Inside USTP campus, near Building 25.</p><small>Confirm the exact location before visiting.</small></div>
+  <div class="side-info-card"><div class="side-icon">✓</div><h3>Request status</h3><p><b>Pending</b> → Approved or Rejected</p><small>Submitting a request does not guarantee the selected schedule.</small></div>
+ </aside>
+</section>
+<section class="request-list-section">
+ <div class="section-heading"><div><p class="eyebrow blue">LOCAL DEMO HISTORY</p><h2>Your submitted requests</h2></div><button class="clear-demo-button" id="clearRequests" type="button">Clear demo requests</button></div>
+ <p class="request-list-note">Requests are saved only in this browser on this device for demonstration. They are not visible to clinic staff or other users.</p>
+ <div id="requestList" class="request-list"><p class="empty-requests">No demo requests submitted yet.</p></div>
+</section>
+</main>
+<footer class="site-footer">
+    <div class="footer-brand brand">
+      <img class="brand-logo footer-logo" src="images/kaabag-logo.jpg" alt="KAABAG company logo">
+      <span><strong>KAABAG</strong><small>HIMSOG TA! • USTP</small></span>
+    </div>
+    <p>HIMSOG TA! is a proposed student-centered school clinic information and appointment platform by KAABAG.</p>
+    <small>For project demonstration. Confirm clinic information and procedures with USTP School Clinic.</small>
+  </footer>
+</body></html>

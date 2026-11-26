@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About KAABAG and HIMSOG TA!, a proposed USTP school clinic information and appointment platform.">
+  <title>About Us | KAABAG - HIMSOG TA!</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/home.js" defer></script>
+  <style>
+    .about-hero{padding:70px 9% 65px;background:linear-gradient(120deg,#eef6ff,#fff9df)}
+    .about-hero h1{max-width:800px;margin:0 0 17px;color:var(--deep-blue);font:700 clamp(38px,5vw,58px)/1.12 'Playfair Display',Georgia,serif}
+    .about-hero h1 span{color:#c69d00}
+    .about-hero p:not(.eyebrow){max-width:760px;color:#60738a;font-size:15px;line-height:1.85}
+    .about-section{padding:58px 9%}
+    .about-section h2{margin:0 0 13px;color:var(--deep-blue);font:700 32px 'Playfair Display',Georgia,serif}
+    .about-section p{color:var(--muted);font-size:13px;line-height:1.85}
+    .about-two-col{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .about-card{padding:27px;border:1px solid var(--line);border-radius:18px;background:white;box-shadow:0 8px 25px rgba(28,69,112,.05)}
+    .about-card h3{margin:0 0 10px;color:var(--deep-blue);font:700 21px 'Playfair Display',Georgia,serif}
+    .about-card li{margin:8px 0;color:var(--muted);font-size:12px;line-height:1.7}
+    .purpose-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:25px}
+    .purpose-card{padding:22px;border-radius:16px;background:#f4f8fd;border-bottom:4px solid #e4bd18}
+    .purpose-card strong{display:block;margin-bottom:8px;color:var(--deep-blue)}
+    .purpose-card p{margin:0;font-size:12px}
+    .survey-band{padding:45px 9%;background:#173f78;color:white}
+    .survey-band h2{margin:0 0 10px;color:white;font:700 30px 'Playfair Display',Georgia,serif}
+    .survey-band>p{max-width:720px;color:#dce8f6;font-size:12px;line-height:1.8}
+    .survey-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:24px;max-width:650px}
+    .survey-stat{padding:20px;border-radius:15px;background:rgba(255,255,255,.1)}
+    .survey-stat b{display:block;color:#f4cc21;font-size:36px}
+    .survey-stat span{color:#edf4fc;font-size:12px}
+    .roadmap{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:24px}
+    .roadmap-step{padding:18px;border-radius:14px;background:#f4f8fd}
+    .roadmap-step b{display:block;margin-bottom:8px;color:#1b5792}
+    .roadmap-step p{margin:0;font-size:11px}
+    @media(max-width:760px){.about-two-col,.purpose-grid{grid-template-columns:1fr}.roadmap{grid-template-columns:1fr 1fr}}
+    @media(max-width:480px){.roadmap,.survey-stats{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="HIMSOG TA home">
+      <img class="brand-logo" src="images/kaabag-logo.jpg" alt="KAABAG company logo">
+      <span><strong>KAABAG</strong><small>HIMSOG TA! • USTP</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About Us</a>
+      <a href="services.html">Our Services</a>
+      <a href="clinic-info.html">Clinic Information</a>
+      <a href="wellness.html">Health &amp; Wellness</a>
+      <a class="nav-appointment" href="appointments.php">Appointments</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-hero">
+      <p class="eyebrow blue">KAABAG PRESENTS</p>
+      <h1>Getting clinic care should feel <span>simple and accessible.</span></h1>
+      <p>HIMSOG TA! is a proposed student-centered school clinic information and appointment platform for the University of Science and Technology of Southern Philippines (USTP). It brings clinic information and appointment requests together in one convenient place for Trailblazers.</p>
+      <a class="primary-button" href="services.html">Explore Clinic Services <span>→</span></a>
+    </section>
+
+    <section class="about-section">
+      <div class="about-two-col">
+        <div>
+          <p class="eyebrow blue">WHO WE ARE</p>
+          <h2>About KAABAG</h2>
+          <p>KAABAG is the proposing company behind HIMSOG TA!. Through this project, KAABAG aims to make it easier for USTP students to learn about school clinic services and understand how to access them.</p>
+          <p>Our concept is guided by the belief expressed in our tagline: <strong>“Atimanon ang panglawas, dili kinahanglan mahal.”</strong></p>
+        </div>
+        <div class="about-card">
+          <p class="eyebrow blue">OUR PLATFORM</p>
+          <h3>What is HIMSOG TA!?</h3>
+          <p>HIMSOG TA! is designed as one platform where students can:</p>
+          <ul>
+            <li>View clinic services and general requirements.</li>
+            <li>Learn how to access school clinic support.</li>
+            <li>Choose a preferred appointment schedule.</li>
+            <li>Send an appointment request for clinic confirmation.</li>
+          </ul>
+          <p><strong>Affordable Health. Accessible Care. Healthier Trailblazers.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" style="background:#f8fbff">
+      <p class="eyebrow blue">OUR PURPOSE</p>
+      <h2>Why HIMSOG TA! matters</h2>
+      <p>Our presentation identified a need to make students more aware of the school clinic and the services available to them. HIMSOG TA! responds by making clinic information easier to find and appointment requests more convenient.</p>
+      <div class="purpose-grid">
+        <div class="purpose-card"><strong>01 · Inform</strong><p>Present clinic services and requirements in one easy-to-access platform.</p></div>
+        <div class="purpose-card"><strong>02 · Connect</strong><p>Help students select a preferred schedule and submit an appointment request for clinic confirmation.</p></div>
+        <div class="purpose-card"><strong>03 · Support</strong><p>Promote awareness of physical and mental wellness resources for the USTP community.</p></div>
+      </div>
+    </section>
+
+    <section class="survey-band">
+      <p class="eyebrow">LISTENING TO TRAILBLAZERS</p>
+      <h2>Built around what students shared.</h2>
+      <p>The student survey presented in the KAABAG pitch showed that many respondents had not used the campus clinic. Students also identified lack of awareness and limited time as possible barriers to accessing services.</p>
+      <div class="survey-stats">
+        <div class="survey-stat"><b>61.1%</b><span>of respondents said they had never used campus clinic services.</span></div>
+        <div class="survey-stat"><b>38.9%</b><span>of respondents said they had used campus clinic services.</span></div>
+      </div>
+      <p>Students also expressed interest in mental health counseling, stress management sessions, basic medical checkups, and wellness seminars.</p>
+    </section>
+
+    <section class="about-section">
+      <p class="eyebrow blue">THE ROAD AHEAD</p>
+      <h2>From concept to campus access</h2>
+      <p>As outlined in the KAABAG presentation, the project will move forward in stages and in coordination with USTP School Clinic personnel.</p>
+      <div class="roadmap">
+        <div class="roadmap-step"><b>NOW</b><p>Ongoing student survey and proposed platform design.</p></div>
+        <div class="roadmap-step"><b>NEXT</b><p>Consult with USTP School Clinic personnel.</p></div>
+        <div class="roadmap-step"><b>SOON</b><p>Develop and pilot HIMSOG TA! at USTP-CDO, subject to approval.</p></div>
+        <div class="roadmap-step"><b>FUTURE</b><p>Expand to more USTP campuses and improve access to clinic services.</p></div>
+      </div>
+    </section>
+
+    <section class="notice">
+      <span class="notice-icon">ⓘ</span>
+      <p><strong>Project status:</strong> HIMSOG TA! is a proposed website/platform concept. It is not an official USTP clinic system. Clinic services, requirements, schedules, and appointment procedures must be reviewed and approved by the appropriate USTP personnel before launch.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html">
+      <img class="brand-logo" src="images/kaabag-logo.jpg" alt="KAABAG company logo">
+      <span><strong>KAABAG</strong><small>HIMSOG TA! • USTP</small></span>
+    </a>
+    <p>Affordable Health. Accessible Care. Healthier Trailblazers.</p>
+    <span class="copyright">© 2026 KAABAG • HIMSOG TA!</span>
+  </footer>
+</body>
+</html>

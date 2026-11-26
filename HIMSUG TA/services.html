@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about the health services for USTP students at HIMSOG TA!">
+  <title>Our Services | HIMSOG TA! - USTP School Clinic</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/services.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="services.html" aria-label="HIMSOG TA home">
+      <img class="brand-logo" src="images/kaabag-logo.jpg" alt="KAABAG company logo">
+      <span><strong>KAABAG</strong><small>HIMSOG TA! • USTP</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a class="active" href="services.html">Our Services</a>
+      <a href="clinic-info.html">Clinic Information</a>
+      <a href="wellness.html">Health &amp; Wellness</a>
+      <a class="nav-appointment" href="appointments.php">Appointments</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> USTP SCHOOL CLINIC</p>
+        <h1>Care that keeps<br><em>you moving forward.</em></h1>
+        <p class="hero-description">Explore the health services listed for USTP students. Find out what each service is about and what you may need before visiting the clinic.</p>
+        <a class="primary-button" href="#service-list">Explore Our Services <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Healthcare illustration">
+        <div class="art-circle circle-one"></div>
+        <div class="art-circle circle-two"></div>
+        <div class="medical-card">
+          <div class="medical-cross">+</div>
+          <div class="medical-heart">♡</div>
+          <strong>Your health<br>comes first.</strong>
+          <span>HIMSOG TA! • TRAILBLAZERS</span>
+        </div>
+        <div class="floating-pill">✚</div>
+        <div class="floating-heart">♥</div>
+      </div>
+    </section>
+
+    <section class="intro-section">
+      <div>
+        <p class="eyebrow blue">HERE FOR YOUR WELL-BEING</p>
+        <h2>Get to know our <span>clinic services.</span></h2>
+      </div>
+      <p class="intro-text">Whether you need help with your health, dental care, or personal concerns, start here to learn about the services and how to ask the clinic for assistance.</p>
+    </section>
+
+    <section class="services-section" id="service-list">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow blue">WHAT WE OFFER</p>
+          <h2>Explore the services</h2>
+        </div>
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input type="search" id="serviceSearch" placeholder="Search a service..." aria-label="Search services">
+        </label>
+      </div>
+
+      <div class="service-grid" id="serviceGrid">
+        <article class="service-card" data-search="prescription refill medicine medication">
+          <div class="service-icon icon-blue">Rx</div>
+          <span class="service-number">SERVICE 01</span>
+          <h3>Prescription Refill</h3>
+          <p>Get information about requesting a refill for medication previously prescribed by a healthcare provider.</p>
+          <button class="learn-more" data-service="prescription">Learn more <span>→</span></button>
+        </article>
+        <article class="service-card" data-search="physical examination medical checkup health assessment">
+          <div class="service-icon icon-yellow">✚</div>
+          <span class="service-number">SERVICE 02</span>
+          <h3>Physical Examination</h3>
+          <p>A general health assessment that may include vital-sign checks and other examinations based on your needs.</p>
+          <button class="learn-more" data-service="physical">Learn more <span>→</span></button>
+        </article>
+        <article class="service-card" data-search="dental dentist teeth oral care">
+          <div class="service-icon icon-mint">✦</div>
+          <span class="service-number">SERVICE 03</span>
+          <h3>Dental Services</h3>
+          <p>Learn about dental consultations and available services that support good oral health.</p>
+          <button class="learn-more" data-service="dental">Learn more <span>→</span></button>
+        </article>
+        <article class="service-card" data-search="psychological mental emotional assessment support">
+          <div class="service-icon icon-lavender">♡</div>
+          <span class="service-number">SERVICE 04</span>
+          <h3>Psychological Services</h3>
+          <p>Find out about psychological support and services that may help you understand your thoughts, feelings, and behavior.</p>
+          <button class="learn-more" data-service="psychological">Learn more <span>→</span></button>
+        </article>
+        <article class="service-card" data-search="guidance counseling academic personal social">
+          <div class="service-icon icon-peach">☼</div>
+          <span class="service-number">SERVICE 05</span>
+          <h3>Guidance Counseling</h3>
+          <p>A supportive space to discuss personal, academic, social, or emotional concerns with a guidance professional.</p>
+          <button class="learn-more" data-service="guidance">Learn more <span>→</span></button>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No services match your search. Try another keyword.</p>
+    </section>
+
+    <section class="help-banner">
+      <div class="help-icon">?</div>
+      <div>
+        <h2>Not sure which service you need?</h2>
+        <p>Contact or visit the USTP School Clinic and ask the clinic personnel for guidance.</p>
+      </div>
+      <a href="clinic-info.html" class="secondary-button">Clinic Information <span>→</span></a>
+    </section>
+
+    <section class="notice">
+      <span class="notice-icon">ⓘ</span>
+      <p><strong>Please take note:</strong> The descriptions and requirements on this page are general guidance. Requirements, availability, and procedures may vary. Please confirm the latest details directly with the USTP School Clinic before your visit.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="services.html">
+      <img class="brand-logo" src="images/kaabag-logo.jpg" alt="KAABAG company logo">
+      <span><strong>KAABAG</strong><small>HIMSOG TA! • USTP</small></span>
+    </a>
+    <p>Supporting the health and well-being of every Trailblazer.</p>
+    <span class="copyright">© 2026 KAABAG • HIMSOG TA! Website Prototype</span>
+  </footer>
+
+  <div class="modal-backdrop" id="serviceModal" hidden>
+    <section class="service-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close dialog">×</button>
+      <p class="eyebrow blue" id="modalNumber">SERVICE DETAILS</p>
+      <div class="modal-icon" id="modalIcon">+</div>
+      <h2 id="modalTitle">Service title</h2>
+      <p class="modal-description" id="modalDescription"></p>
+      <h3>Suggested items to prepare</h3>
+      <ul id="modalRequirements"></ul>
+      <p class="modal-footnote">These are suggested general items only. Please confirm the actual requirements and process with the USTP School Clinic.</p>
+      <button class="primary-button modal-done" id="modalDone">Got it</button>
+    </section>
+  </div>
+</body>
+</html>
